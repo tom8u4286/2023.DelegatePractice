@@ -7,6 +7,7 @@
 
 import UIKit
 
+// 第一頁
 class PageOneVC: UIViewController {
     
     // label顯示的數字資料
@@ -29,6 +30,14 @@ class PageOneVC: UIViewController {
         button.titleLabel?.font = UIFont(name: "HelveticaNeue", size: CGFloat(30))
         button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 10
+        
+        // 加入Action
+        let action = UIAction { _ in
+            let page2 = PageTwoVC()
+            self.present(page2, animated: true)
+        }
+        button.addAction(action, for: .touchUpInside)
+        
         return button
     }()
     
@@ -67,9 +76,6 @@ class PageOneVC: UIViewController {
         vStack.addArrangedSubview(nextPageBtn)
     }
     
-    
-
-
 }
 
 

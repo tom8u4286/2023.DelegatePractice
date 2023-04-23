@@ -13,6 +13,7 @@
 		DD245EEE29F51FDF00D6DB87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD245EED29F51FDF00D6DB87 /* Assets.xcassets */; };
 		DD245EF129F51FDF00D6DB87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD245EEF29F51FDF00D6DB87 /* LaunchScreen.storyboard */; };
 		DD245EF929F5325500D6DB87 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD245EF829F5325500D6DB87 /* UIView+.swift */; };
+		DD245EFB29F5545800D6DB87 /* PageTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD245EFA29F5545800D6DB87 /* PageTwoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DD245EF029F51FDF00D6DB87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD245EF229F51FDF00D6DB87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD245EF829F5325500D6DB87 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		DD245EFA29F5545800D6DB87 /* PageTwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTwoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				DD245EE129F51FDD00D6DB87 /* AppDelegate.swift */,
 				DD245EE529F51FDD00D6DB87 /* PageOneVC.swift */,
+				DD245EFA29F5545800D6DB87 /* PageTwoVC.swift */,
 				DD245EF829F5325500D6DB87 /* UIView+.swift */,
 				DD245EED29F51FDF00D6DB87 /* Assets.xcassets */,
 				DD245EEF29F51FDF00D6DB87 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD245EF929F5325500D6DB87 /* UIView+.swift in Sources */,
+				DD245EFB29F5545800D6DB87 /* PageTwoVC.swift in Sources */,
 				DD245EE629F51FDD00D6DB87 /* PageOneVC.swift in Sources */,
 				DD245EE229F51FDD00D6DB87 /* AppDelegate.swift in Sources */,
 				DD245EEC29F51FDD00D6DB87 /* _023_DelegatePractice.xcdatamodeld in Sources */,
