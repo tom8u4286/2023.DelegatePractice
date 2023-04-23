@@ -8,7 +8,7 @@
 import UIKit
 
 // 第一頁
-class PageOneVC: UIViewController {
+class Page1VC: UIViewController, Page2Delegate {
     
     // label顯示的數字資料
     // 將會被Page2的按鈕所改變
@@ -33,7 +33,10 @@ class PageOneVC: UIViewController {
         
         // 加入Action
         let action = UIAction { _ in
-            let page2 = PageTwoVC()
+            let page2 = Page2VC()
+            // 設定page2的事件將會傳給self
+            page2.delegate = self
+            
             self.present(page2, animated: true)
         }
         button.addAction(action, for: .touchUpInside)
@@ -76,8 +79,11 @@ class PageOneVC: UIViewController {
         vStack.addArrangedSubview(nextPageBtn)
     }
     
+    // Page2的Delegate function
+    func plusOneEvent() {
+        print("Page1收到事件。")
+    }
+    
 }
-
-
 
 
