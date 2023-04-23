@@ -26,10 +26,17 @@ class Page2VC: UIViewController {
         button.layer.cornerRadius = 10
         
         /// 由於delegate遵循Page2Delegate，因此可以直接呼叫其plusOneEvent函數。
-        let action = UIAction { _ in
+        let actionTouchUp = UIAction { _ in
             self.delegate.plusOneEvent()
+            button.backgroundColor = .systemBlue
         }
-        button.addAction(action, for: .touchUpInside)
+        button.addAction(actionTouchUp, for: .touchUpInside)
+        
+        // 點下按鈕時，button將短暫改變顏色
+        let actionTouchDown = UIAction { _ in
+            button.backgroundColor = .buttonClickedBlue
+        }
+        button.addAction(actionTouchDown, for: .touchDown)
         
         return button
     }()
@@ -38,7 +45,7 @@ class Page2VC: UIViewController {
         super.viewDidLoad()
         
         // 淺黃色背景
-        view.backgroundColor = UIColor(red: 254/255, green: 251/255, blue: 155/255, alpha: 1.00)
+        view.backgroundColor = .lightWhite
         
         setupView()
     }
