@@ -25,6 +25,7 @@ class Page2VC: UIViewController {
         button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 10
         
+        /// 由於delegate遵循Page2Delegate，因此可以直接呼叫其plusOneEvent函數。
         let action = UIAction { _ in
             self.delegate.plusOneEvent()
         }

@@ -10,9 +10,13 @@ import UIKit
 // 第一頁
 class Page1VC: UIViewController, Page2Delegate {
     
-    // label顯示的數字資料
-    // 將會被Page2的按鈕所改變
-    var number = 0
+    /// label顯示的數字資料，將會被Page2的按鈕所改變。
+    /// 當number被改變時，去修改label的資料，將新資料顯示在UI上。
+        var number = 0 {
+        didSet{
+            numberLabel.text = "\(number)"
+        }
+    }
     
     // 顯示數字的Label
     lazy private var numberLabel: UILabel = {
@@ -82,6 +86,9 @@ class Page1VC: UIViewController, Page2Delegate {
     // Page2的Delegate function
     func plusOneEvent() {
         print("Page1收到事件。")
+        
+        // 收到點按事件時，number+1
+        number += 1
     }
     
 }
