@@ -46,7 +46,6 @@
 		DD245ED529F51FDD00D6DB87 = {
 			isa = PBXGroup;
 			children = (
-				DD245F2129F56F0200D6DB87 /* UIColor+.swift */,
 				DD245EE029F51FDD00D6DB87 /* 2023.DelegatePractice */,
 				DD245EDF29F51FDD00D6DB87 /* Products */,
 			);
@@ -68,6 +67,7 @@
 				DD245EFA29F5545800D6DB87 /* Page2VC.swift */,
 				DD245EFC29F55B0B00D6DB87 /* Page2Delegate.swift */,
 				DD245EF829F5325500D6DB87 /* UIView+.swift */,
+				DD245F2129F56F0200D6DB87 /* UIColor+.swift */,
 				DD245EED29F51FDF00D6DB87 /* Assets.xcassets */,
 				DD245EEF29F51FDF00D6DB87 /* LaunchScreen.storyboard */,
 				DD245EF229F51FDF00D6DB87 /* Info.plist */,

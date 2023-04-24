@@ -84,7 +84,7 @@ class Page1VC: UIViewController, Page2Delegate {
     }
     
     // Page2的Delegate function
-    func plusOneEvent() {
+    func plusOneButtonEvent() {
         print("Page1收到事件。")
         
         // 收到點按事件時，number+1

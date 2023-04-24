@@ -27,7 +27,7 @@ class Page2VC: UIViewController {
         
         /// 由於delegate遵循Page2Delegate，因此可以直接呼叫其plusOneEvent函數。
         let actionTouchUp = UIAction { _ in
-            self.delegate.plusOneEvent()
+            self.delegate.plusOneButtonEvent()
             button.backgroundColor = .systemBlue
         }
         button.addAction(actionTouchUp, for: .touchUpInside)
